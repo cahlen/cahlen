@@ -34,10 +34,12 @@ I love sharing my knowledge and engaging with the tech community. Here are some 
 - **SpringOne Platform 2019 (Austin, TX)**: *High Speed Data Processing with Apache Geode and Spring Cloud Stream*.
 - **SpringOne Platform 2018 (Washington, DC)**: *Continuous Data Governance with Spring Cloud Data Flow*.
 - **Apache Geode Summit 2016 (Palo Alto, CA)**: *Predicting and Preventing Vehicle Failures Using Streaming Telematics Analysis*.
+- **IBM Datapalooza 2015 (San Francisco, CA)**: *Real Time Vehicle Telematics*
+- **Pivotal Labs Meetup 2015 (San Francisco, CA)**: *Predicting & Preventing Vehicle Failures Using Streaming Telematics Analysis*
 
 ## 🛠️ Skills & Technologies
 - **Programming Languages**: Python, Java favorites. But code generation models make this not important anymore, heh.
-- **Data & AI Platforms**: Nvidia TensorRT, Nvidia Tensorrt_llm, Nvidia Nemo, Nvidia TAO, Nvidia ACE, Apache Spark, Hadoop, Spring Cloud Dataflow, IBM Watson.
+- **Data & AI Platforms**: Nvidia TensorRT, Nvidia TensorRT-LLM, Nvidia NeMo, Nvidia TAO, Nvidia ACE (love aceagent and colang!), Apache Spark, Hadoop.. and too many more to list.
 - **AI Frameworks**: PyTorch, TensorFlow, Neural Networks.
 - **Cloud Platforms**: AWS (Certified Solutions Architect), Microsoft Azure.
 - **AI Expertise**: Machine Learning, Neural Networks, Real-Time AI at the Edge.
