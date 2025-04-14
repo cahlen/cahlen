@@ -6,6 +6,8 @@ A cutting-edge tool to simplify and accelerate the creation of conversation data
 
 ---
 
+![Battle Station](https://pbs.twimg.com/media/GohMpv3XcAAOBLI?format=jpg&name=medium)
+
 im a fan of ai and math. and computers. and motorcycles and metal.
 
 ## 🚀 About Me
