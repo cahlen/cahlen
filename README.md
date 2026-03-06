@@ -1,8 +1,40 @@
 # 👋 Hi, I'm Cahlen Humphreys!
 
-## 🚀 **Featured Project**
-### [Conversation Dataset Generator](https://cahlen.github.io/conversation-dataset-generator/)
-A cutting-edge tool to simplify and accelerate the creation of conversation datasets for AI models. Whether you're working on chatbots, sentiment analysis, or dialogue systems, this project will help you generate high-quality datasets with ease. Check it out and let me know what you think!
+## 🚀 **Featured Project: CoFrGeNet-F**
+### [Continued Fraction Language Model](https://github.com/cahlen/cofrgenet-f) · [Model Weights](https://huggingface.co/cahlen/cofrgenet-f-82m)
+
+An open-source implementation of **CoFrGeNet-F**, a Transformer architecture that replaces standard Feed-Forward Networks with **continued fraction networks**. Based on IBM Research's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766) — implemented from the paper's mathematics.
+
+The core mathematical object is the generalized continued fraction:
+
+$$
+\tilde{f}(a_1, a_2, \ldots, a_d) \;=\; \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{\ddots + \cfrac{1}{a_d}}}}
+$$
+
+evaluated efficiently via **continuant polynomials** with a custom backward pass that reduces d divisions to one:
+
+$$
+K_0 = 1, \qquad K_1(a_d) = a_d, \qquad K_k = a_{d-k+1} \cdot K_{k-1} + K_{k-2} \qquad \Rightarrow \qquad \tilde{f} = \frac{K_{d-1}}{K_d}
+$$
+
+$$
+\frac{\partial \tilde{f}}{\partial a_k} = (-1)^{k} \left( \frac{K_{d-k}}{K_d} \right)^{2}
+$$
+
+Each **Continued Fraction FFN (Cffn)** layer replaces the standard two-layer FFN, achieving **~4× fewer parameters per layer** through rational function approximation:
+
+$$
+y = U x + \sum_{j=1}^{L} V_j \cdot \tilde{f}\!\left( \sigma(Gx) \odot x \;\odot\; W^{(j)} \right)
+$$
+
+#### Experiments
+
+| Experiment | Baseline | CoFrGeNet-F | Status |
+|------------|----------|-------------|--------|
+| **1: Parameter-Efficient** | 124M (12L, 768d) | 82M (12L, 768d) — 34% fewer params | Complete |
+| **2: Iso-Parameter** | 124M (12L, 768d) | 128M (12L, 1024d) — equal params | Training |
+
+All models trained on FineWeb-Edu 10BT (~10B tokens) with identical hyperparameters. Full results, architecture docs, and LaTeX math in the [repo wiki](https://github.com/cahlen/cofrgenet-f/wiki).
 
 ---
 
