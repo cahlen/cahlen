@@ -3,9 +3,13 @@
 ## 🚀 **Featured Project: CoFrGeNet-F**
 ### [Continued Fraction Language Model](https://github.com/cahlen/cofrgenet-f) · [Model Weights](https://huggingface.co/cahlen/cofrgenet-f-82m)
 
-An open-source implementation of **CoFrGeNet-F**, a Transformer architecture that replaces standard Feed-Forward Networks with **continued fraction networks**. Based on IBM Research's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766) — implemented from the paper's mathematics.
+**The big idea:** Every modern language model (GPT, LLaMA, etc.) builds its "thinking" on the same basic math — stacked layers of matrix multiplications and simple activation functions. These are essentially *polynomials*, which are great general-purpose tools but can be wasteful: they often need enormous networks (billions of parameters) to approximate complex patterns.
 
-The core mathematical object is the generalized continued fraction:
+**Continued fractions are different.** Instead of polynomials, they use *ratios of polynomials* — rational functions. This matters because rational functions can capture sharp transitions, asymptotes, and intricate patterns that polynomials need far more terms to approximate. Think of it like this: a polynomial is a Taylor series that slowly converges; a continued fraction often gets there in a fraction of the terms.
+
+**The practical payoff:** by swapping the feed-forward layers inside a Transformer with continued fraction networks, you can build a language model that uses **34% fewer parameters** — meaning less memory, less compute, and potentially faster inference — while aiming for the same quality. Fewer parameters also means the model is more accessible: easier to train, easier to deploy, easier to study.
+
+This is an implementation of **CoFrGeNet-F** based on IBM Research's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766), built from the paper's mathematics. The core object is the generalized continued fraction:
 
 $$
 \tilde{f}(a_1, a_2, \ldots, a_d) \;=\; \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{\ddots + \cfrac{1}{a_d}}}}
