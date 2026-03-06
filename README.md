@@ -9,6 +9,8 @@
 
 **The practical payoff:** by swapping the feed-forward layers inside a Transformer with continued fraction networks, you can build a language model that uses **34% fewer parameters** — meaning less memory, less compute, and potentially faster inference — while aiming for the same quality. Fewer parameters also means the model is more accessible: easier to train, easier to deploy, easier to study.
 
+**Why this matters for interpretability:** Standard neural networks are black boxes — thousands of neurons with opaque activations. Continued fractions give us something different: each layer computes an explicit rational function with a small number of learned coefficients. You can write down the exact mathematical expression the network is computing at each layer, inspect its poles and zeros, and understand *why* a particular input produces a particular output. The structure is inherently decomposable — each ladder is an independent rational approximation, and the combination weights tell you how much each one contributes. This is a path toward neural networks we can actually read and reason about, not just train and hope.
+
 This is an implementation of **CoFrGeNet-F** based on IBM Research's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766), built from the paper's mathematics. The core object is the generalized continued fraction:
 
 $$
