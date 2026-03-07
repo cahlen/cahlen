@@ -38,7 +38,8 @@ $$
 | Experiment | Baseline | CoFrGeNet-F | Status |
 |------------|----------|-------------|--------|
 | **1: Parameter-Efficient** | 124M (12L, 768d) | 82M (12L, 768d) — 34% fewer params | Complete |
-| **2: Iso-Parameter** | 124M (12L, 768d) | 128M (12L, 1024d) — equal params | Training |
+| **2: Iso-Parameter** | 124M (12L, 768d) | 128M (12L, 1024d) — equal params | Complete |
+| **3: More Ladders** | 124M (12L, 768d) | 128M (12L, 1024d, L=8) — 8 CF ladders | Training |
 
 All models trained on FineWeb-Edu 10BT (~10B tokens) with identical hyperparameters. Full results, architecture docs, and LaTeX math in the [repo wiki](https://github.com/cahlen/cofrgenet-f/wiki).
 
