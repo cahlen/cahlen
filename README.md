@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Cahlen Humphreys!
 
 ## 🚀 **Featured Project: CoFrGeNet-F**
-### [Continued Fraction Language Model](https://github.com/cahlen/cofrgenet-f) · [Model Weights](https://huggingface.co/cahlen/cofrgenet-f-82m)
+### [Continued Fraction Language Model](https://github.com/cahlen/cofrgenet-f) · [Model Weights](https://huggingface.co/cahlen/cofrgenet-f)
 
 **The big idea:** Every modern language model (GPT, LLaMA, etc.) builds its "thinking" on the same basic math — stacked layers of matrix multiplications and simple activation functions. These are essentially *polynomials*, which are great general-purpose tools but can be wasteful: they often need enormous networks (billions of parameters) to approximate complex patterns.
 
