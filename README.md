@@ -1,5 +1,24 @@
 # 👋 Hi, I'm Cahlen Humphreys!
 
+## 🚀 **Featured: [bigcompute.science](https://bigcompute.science)** — Open Experimental Results from Heavy Computation
+### [Website](https://bigcompute.science) · [GitHub](https://github.com/cahlen/bigcompute.science) · [Experiment Code](https://github.com/cahlen/idontknow)
+
+Custom CUDA kernels. GPU clusters. Serious hardware. Results that push real computational frontiers — not reproductions of known work.
+
+Currently running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh):
+
+| Experiment | What it does | Status |
+|-----------|-------------|--------|
+| **Zaremba's Conjecture** | Verifying 8 billion values of a 1972 open conjecture | In progress |
+| **LLM Theorem Proving** | Racing Goedel-Prover-V2 vs Kimina-Prover on Lean 4 proofs | 19/20 proved |
+| **Ramsey R(5,5)** | GPU search to improve a 35-year-old lower bound | Queued |
+| **Class Numbers** | Extending real quadratic field tables 100× beyond known frontier | Queued |
+| **Kronecker Coefficients** | Doubling the frontier — relevant to P vs NP via GCT | Queued |
+
+Every experiment is designed for both humans and AI agents — structured YAML frontmatter, raw data, and [`/llms.txt`](https://bigcompute.science/llms.txt) for machine consumption.
+
+---
+
 ## 🚀 **Featured Project: CoFrGeNet-F**
 ### [Continued Fraction Language Model](https://github.com/cahlen/cofrgenet-f) · [Model Weights](https://huggingface.co/cahlen/cofrgenet-f)
 
