@@ -9,7 +9,7 @@ Running on an **8x NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 
 
 | Experiment | Result | Status |
 |-----------|--------|--------|
-| **Zaremba's Conjecture (1972)** | **10 billion** verified, zero failures, 179s on 8x B200 | Complete |
+| **Zaremba's Conjecture (1972)** | **100 billion** verified, zero failures, 29 min on 8x B200 | Complete |
 | **Spectral Gaps** | Uniform gaps (min 0.237) across 1,214 square-free moduli to m=1999 | Complete |
 | **Transitivity Proof** | Algebraically proved for ALL primes via Dickson's classification | Complete |
 | **Cayley Diameters** | diam(p) ≤ 2 log(p) for all 669 primes to p=1021 | Complete |
@@ -25,7 +25,7 @@ Running on an **8x NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 
 ### Key Numbers
 
 ```
-Zaremba brute-force:     10,000,000,000 denominators verified (zero failures)
+Zaremba brute-force:     100,000,000,000 denominators verified (zero failures)
 Spectral gap minimum:    σ_m ≥ 0.237 across 1,214 moduli (property τ confirmed)
 Hausdorff dimension:     δ = 0.836829443681208 (15 digits)
 Hausdorff spectrum:      1,048,575 subsets computed in 72 min on RTX 5090
