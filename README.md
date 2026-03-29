@@ -66,10 +66,12 @@ Each layer computes an explicit rational function with learnable coefficients �
 Fan of AI, math, computers, motorcycles, and metal.
 
 ## About Me
-- **Role**: Managing Principal at [Enfuse.io](https://www.enfuse.io)
-- **Education**: MS Mathematics
-- **Expertise**: AI/ML, CUDA, distributed systems, edge AI, LLMs, computer vision
-- **Research**: Computational number theory, continued fractions, spectral theory, fractal geometry, open conjectures
+- **Role**: Co-Founder & Managing Principal at [Enfuse.io](https://www.enfuse.io) — high-velocity data pipelines and APIs for Fortune 500 companies
+- **Education**: MS Mathematics, Florida Atlantic University (2013-2015) · BS Mathematics, Boise State University
+- **Teaching**: Mathematics instructor at FAU (Precalculus, Business Calculus)
+- **Previous**: zData Inc., Web Picassos Internet Services, RMCI Internet Services
+- **Expertise**: AI/ML, CUDA kernel development, multi-GPU HPC, edge AI, LLMs, computer vision, distributed systems
+- **Research**: Computational number theory, continued fractions, spectral theory, fractal geometry, attacking open conjectures with GPU compute
 - **Philosophy**: *"If you're not always learning, you're always falling behind."*
 
 ## Speaking Engagements
@@ -83,16 +85,18 @@ Fan of AI, math, computers, motorcycles, and metal.
 - **Pivotal Labs Meetup 2015 (San Francisco, CA)**: *Predicting & Preventing Vehicle Failures Using Streaming Telematics Analysis*
 
 ## Skills & Technologies
-- **Programming Languages**: Python, Java favorites. But code generation models make this not important anymore, heh.
-- **Data & AI Platforms**: Nvidia TensorRT, Nvidia TensorRT-LLM, Nvidia NeMo, Nvidia TAO, Nvidia ACE, Apache Spark, Hadoop.. and too many more to list.
-- **AI Frameworks**: PyTorch, TensorFlow, Neural Networks.
-- **Cloud Platforms**: AWS (Certified Solutions Architect), Microsoft Azure.
-- **AI Expertise**: Machine Learning, Neural Networks, Real-Time AI at the Edge.
+- **Programming Languages**: Python, Java, CUDA C/C++, Scala, Lean 4. But code generation models make this not important anymore, heh.
+- **GPU/HPC**: Custom CUDA kernels, multi-GPU orchestration (NVLink, pthreads), cuSOLVER, cuBLAS. Running 8x B200 DGX + RTX 5090 daily.
+- **Data & AI Platforms**: Nvidia TensorRT, Nvidia TensorRT-LLM, Nvidia NeMo, Nvidia TAO, Nvidia ACE, vLLM, SGLang, Apache Spark, Hadoop, Spark + Scala pipelines.. and too many more to list.
+- **AI Frameworks**: PyTorch, TensorFlow, Lean 4 + Mathlib (formal theorem proving), llama.cpp (GGUF quantization).
+- **Cloud Platforms**: AWS (Certified Solutions Architect), Microsoft Azure, Cloudflare Pages.
+- **AI Expertise**: Machine Learning, Neural Networks, Real-Time AI at the Edge, LLM-assisted theorem proving (RLVR, MCTS proof search), GGUF quantization, computer vision.
+- **Mathematics**: Spectral theory (transfer operators, Chebyshev collocation), number theory (continued fractions, Diophantine approximation), group theory (SL_2 over finite fields, Dickson's classification), fractal geometry (Hausdorff dimension), dynamical systems (Gauss map, Lyapunov exponents).
 - **Research Interests**:
-  - Computational number theory, continued fractions, spectral theory, fractal geometry
-  - Continued fraction neural networks for enhanced interpretability and explainability in AI
-  - GPU-accelerated attacks on open mathematical conjectures
-- **Others**: Distributed Systems, Data Pipelines, CI/CD.
+  - GPU-accelerated attacks on open mathematical conjectures (Zaremba, Ramsey, Cohen-Lenstra)
+  - Continued fraction neural networks for enhanced interpretability and explainability in AI ([CoFrGeNet-F](https://github.com/cahlen/cofrgenet-f), based on IBM's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766))
+  - Building structured mathematical knowledge for AI agent consumption
+- **Others**: Distributed Systems, Data Pipelines, CI/CD, Astro/static site generation.
 
 ## Interests
 - **Learning Resources**: I recommend [deeplearning.ai](https://deeplearning.ai) for refreshing your AI knowledge and staying sharp.
