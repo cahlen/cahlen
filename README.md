@@ -84,19 +84,13 @@ Fan of AI, math, computers, motorcycles, and metal.
 - **IBM Datapalooza 2015 (San Francisco, CA)**: *Real Time Vehicle Telematics*
 - **Pivotal Labs Meetup 2015 (San Francisco, CA)**: *Predicting & Preventing Vehicle Failures Using Streaming Telematics Analysis*
 
-## Skills & Technologies
-- **Programming Languages**: Python, Java, CUDA C/C++, Scala, Lean 4. But code generation models make this not important anymore, heh.
-- **GPU/HPC**: Custom CUDA kernels, multi-GPU orchestration (NVLink, pthreads), cuSOLVER, cuBLAS. Running 8x B200 DGX + RTX 5090 daily.
-- **Data & AI Platforms**: Nvidia TensorRT, Nvidia TensorRT-LLM, Nvidia NeMo, Nvidia TAO, Nvidia ACE, vLLM, SGLang, Apache Spark, Hadoop, Spark + Scala pipelines.. and too many more to list.
-- **AI Frameworks**: PyTorch, TensorFlow, Lean 4 + Mathlib (formal theorem proving), llama.cpp (GGUF quantization).
-- **Cloud Platforms**: AWS (Certified Solutions Architect), Microsoft Azure, Cloudflare Pages.
-- **AI Expertise**: Machine Learning, Neural Networks, Real-Time AI at the Edge, LLM-assisted theorem proving (RLVR, MCTS proof search), GGUF quantization, computer vision.
-- **Mathematics**: Spectral theory (transfer operators, Chebyshev collocation), number theory (continued fractions, Diophantine approximation), group theory (SL_2 over finite fields, Dickson's classification), fractal geometry (Hausdorff dimension), dynamical systems (Gauss map, Lyapunov exponents).
-- **Research Interests**:
-  - GPU-accelerated attacks on open mathematical conjectures (Zaremba, Ramsey, Cohen-Lenstra)
-  - Continued fraction neural networks for enhanced interpretability and explainability in AI ([CoFrGeNet-F](https://github.com/cahlen/cofrgenet-f), based on IBM's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766))
-  - Building structured mathematical knowledge for AI agent consumption
-- **Others**: Distributed Systems, Data Pipelines, CI/CD, Astro/static site generation.
+## What I Do
+- **GPU-Accelerated Research** — Writing custom CUDA kernels to attack open mathematical conjectures on multi-GPU clusters. Currently running an 8x B200 DGX (1.43 TB VRAM).
+- **AI/ML at the Edge** — Deploying real-time inference pipelines: computer vision, LLM serving, sentiment analysis, agentic systems. From cloud to edge devices.
+- **Data Engineering at Scale** — High-velocity data pipelines, stream processing, and distributed systems for Fortune 500 clients.
+- **LLM Infrastructure** — Model quantization (GGUF), multi-GPU serving, inference optimization, formal theorem proving with LLMs.
+- **Mathematical Research** — Spectral theory, number theory, fractal geometry, dynamical systems. Building [continued fraction neural networks](https://github.com/cahlen/cofrgenet-f) (based on IBM's [arXiv:2601.21766](https://arxiv.org/abs/2601.21766)) for interpretable AI.
+- **Cloud & Infrastructure** — AWS (Certified Solutions Architect), GCP, Azure. Whatever the problem needs.
 
 ## Interests
 - **Learning Resources**: I recommend [deeplearning.ai](https://deeplearning.ai) for refreshing your AI knowledge and staying sharp.
