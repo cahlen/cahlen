@@ -9,7 +9,7 @@ Running on an **8x NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 
 
 | Experiment | Result | Status |
 |-----------|--------|--------|
-| **Zaremba's Conjecture (1972)** | **210 billion** verified, zero failures, 116 min on 8x B200 | Complete |
+| **Zaremba's Conjecture (1972)** | **210B** verified unconditionally + conditional framework to 10^1500 | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.tex) |
 | **Spectral Gaps** | Uniform gaps (min 0.237) across 1,214 square-free moduli to m=1999 | Complete |
 | **Transitivity Proof** | Algebraically proved for ALL primes via Dickson's classification | Complete |
 | **Cayley Diameters** | diam(p) ≤ 2 log(p) for all 669 primes to p=1021 | Complete |
