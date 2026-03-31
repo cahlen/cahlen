@@ -3,13 +3,16 @@
 ## [bigcompute.science](https://bigcompute.science) — Big Math. Serious Hardware. Open Results.
 ### [Website](https://bigcompute.science) · [GitHub](https://github.com/cahlen/bigcompute.science) · [Experiment Code](https://github.com/cahlen/idontknow) · [llms.txt](https://bigcompute.science/llms.txt)
 
-Custom CUDA kernels. GPU clusters. Big math. Serious hardware. Open results. Attacking open mathematical conjectures with compute — and publishing everything for humans and AI agents.
+Attacking open mathematical conjectures with GPU compute and AI — publishing everything openly for humans and agents.
+
+**All work is human–AI collaborative** (Cahlen Humphreys + Claude). No mathematical results have been independently peer-reviewed. All claims are grounded in computational evidence and reproducible code. Everything is open for verification.
 
 Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 5090** local:
 
 | Experiment | Result | Status |
 |-----------|--------|--------|
-| **Ramsey R(5,5)** | ALL 656 known K₄₂ colorings UNSAT via 4-SAT (3 sec). Strongest evidence R(5,5) = 43. | Complete |
+| **Zaremba's Conjecture (1972)** | Computer-assisted proof framework (not yet peer-reviewed). D₀ ≈ 3.4×10¹⁰, 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
+| **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT via 4-SAT. Strongest computational evidence R(5,5) = 43. | Complete |
 | **Class Numbers** | 2.74B discriminants for d ∈ [10⁹, 10¹⁰]. Cohen-Lenstra convergence is non-monotone. | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
 | **Hausdorff Spectrum** | First-ever complete dim_H for all 2²⁰ - 1 subsets of {1,...,20} | Complete |
 | **Lyapunov Spectrum** | Lyapunov exponents for all 1,048,575 subsets | Complete |
@@ -17,7 +20,7 @@ Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX
 | **Flint Hills Series** | Partial sums to 10¹⁰, spike decomposition, growth rate analysis | Complete |
 | **LLM Theorem Proving** | 19/20 Lean 4 proofs via Goedel-Prover + Kimina-Prover race | Complete |
 | **Spectral Gaps** | Uniform gaps (min 0.237) across 1,214 square-free moduli to m=1999 | Complete |
-| **Transitivity Proof** | Algebraically proved for ALL primes via Dickson's classification | Complete |
+| **Transitivity** | Algebraic argument (Dickson's classification) for all primes, AI-assisted, not peer-reviewed | Complete |
 | **Cayley Diameters** | diam(p) ≤ 2 log(p) for all 669 primes to p=1021 | Complete |
 | **Kronecker Coefficients** | GPU-accelerated to n=120 for geometric complexity theory | Planned |
 
@@ -25,13 +28,13 @@ Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX
 
 ```
 Zaremba brute-force:     210,000,000,000 denominators verified (zero failures)
-Zaremba proof:           D₀ ≈ 3.4×10¹⁰, all constants arb/MPFR interval-certified
+Zaremba framework:       D₀ ≈ 3.4×10¹⁰, arb/MPFR interval-certified (not peer-reviewed)
 Ramsey R(5,5):           656/656 K₄₂ colorings cannot extend to K₄₃ (4-SAT, 3 sec)
 Class numbers:           2,735,671,820 fundamental discriminants computed (30 min)
 Spectral gap minimum:    σ_m ≥ 0.237 across 1,214 moduli (property τ confirmed)
 Hausdorff dimension:     δ = 0.836829443681208 (15 digits)
 Hausdorff spectrum:      1,048,575 subsets computed in 72 min on RTX 5090
-Transitivity:            proved for ALL primes (algebraic proof, not computational)
+Transitivity:            algebraic argument for all primes (Dickson, AI-assisted)
 ```
 
 Every experiment includes structured YAML frontmatter, raw data, and reproduction commands. The site serves [`/llms.txt`](https://bigcompute.science/llms.txt) for agent consumption.
