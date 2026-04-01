@@ -14,6 +14,7 @@ Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX
 | **Zaremba's Conjecture (1972)** | Computer-assisted proof framework (not yet peer-reviewed). D₀ ≈ 3.4×10¹⁰, 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
 | **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT via 4-SAT. Strongest computational evidence R(5,5) = 43. | Complete |
 | **Class Numbers** | 2.74B discriminants for d ∈ [10⁹, 10¹⁰]. Cohen-Lenstra convergence is non-monotone. | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
+| **Zaremba Density** | A={1,2,3} has exactly 27 exceptions to 10^{10}. Exception set closed. | [Finding](https://bigcompute.science/findings/zaremba-density-phase-transition/) |
 | **Hausdorff Spectrum** | First-ever complete dim_H for all 2²⁰ - 1 subsets of {1,...,20} | Complete |
 | **Lyapunov Spectrum** | Lyapunov exponents for all 1,048,575 subsets | Complete |
 | **Minkowski ?(x) Spectrum** | First numerical multifractal singularity spectrum f(α) | Complete |
@@ -21,7 +22,7 @@ Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX
 | **LLM Theorem Proving** | 19/20 Lean 4 proofs via Goedel-Prover + Kimina-Prover race | Complete |
 | **Spectral Gaps** | Uniform gaps (min 0.237) across 1,214 square-free moduli to m=1999 | Complete |
 | **Transitivity** | Algebraic argument (Dickson's classification) for all primes, AI-assisted, not peer-reviewed | Complete |
-| **Cayley Diameters** | diam(p) ≤ 2 log(p) for all 669 primes to p=1021 | Complete |
+| **Cayley Diameters** | diam(p)/log(p) → 1.45 for 669 primes to p=1021 | Complete |
 | **Kronecker Coefficients** | GPU-accelerated to n=120 for geometric complexity theory | Planned |
 
 ### Key Numbers
