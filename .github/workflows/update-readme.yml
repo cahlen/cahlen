@@ -1,0 +1,90 @@
+name: Update Profile README
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch: {}      # Manual trigger
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch latest data from repos
+        run: |
+          # Fetch manifest from idontknow repo
+          curl -sL https://raw.githubusercontent.com/cahlen/idontknow/main/docs/verifications/manifest.json -o /tmp/manifest.json
+
+          # Fetch certifications from bigcompute.science
+          curl -sL https://raw.githubusercontent.com/cahlen/bigcompute.science/main/src/data/certifications.json -o /tmp/certifications.json
+
+          # Fetch CLAUDE.md for experiment status
+          curl -sL https://raw.githubusercontent.com/cahlen/idontknow/main/CLAUDE.md -o /tmp/CLAUDE.md
+
+      - name: Generate README
+        run: |
+          python3 << 'PYEOF'
+          import json, re
+
+          # Load data
+          with open('/tmp/manifest.json') as f:
+              manifest = json.load(f)
+          with open('/tmp/certifications.json') as f:
+              certs = json.load(f)
+
+          stats = manifest['stats']
+          findings = manifest['findings']
+          cert_list = certs['certifications']
+
+          total_findings = stats['total_findings']
+          total_reviews = stats['total_reviews']
+          unique_models = stats['unique_models']
+          unique_providers = stats['unique_providers']
+          total_issues = certs['stats']['issues_discovered']
+          fixed_issues = certs['stats']['issues_fixed']
+
+          # Read template
+          with open('README.md') as f:
+              readme = f.read()
+
+          # Update dynamic numbers
+          # Findings count
+          readme = re.sub(
+              r'### \d+ Published Findings.*?\d+ Providers',
+              f'### {total_findings} Published Findings · {total_reviews} Reviews · {unique_models} AI Models · {unique_providers} Providers',
+              readme
+          )
+
+          # Issues count
+          readme = re.sub(
+              r'\d+ issues identified, \d+ resolved',
+              f'{total_issues} issues identified, {fixed_issues} resolved',
+              readme
+          )
+
+          with open('README.md', 'w') as f:
+              f.write(readme)
+
+          print(f'Updated: {total_findings} findings, {total_reviews} reviews, {total_issues} issues ({fixed_issues} fixed)')
+          PYEOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (
+            git add README.md
+            git commit -m "Auto-update: $(date +%Y-%m-%d) stats from bigcompute.science"
+            git push
+          )

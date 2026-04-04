@@ -78,3 +78,29 @@ Fan of AI, math, computers, motorcycles, and metal.
 - **Nvidia GTC 2025 (San Jose, CA)**: *Agentic AI at the Edge: Real-Time Sentiment Analysis for Engaging Customer Interaction*
 - **Datacon LA 2021 (Virtual)**: *Building Production Data Pipelines with Test Driven Development (TDD) and Pair Programming*
 - **Data Intensive Application Meetup (Irvine, CA)**: *Massive Data Processing at Scale*
+- **SpringOne Platform 2019 (Austin, TX)**: *High Speed Data Processing with Apache Geode and Spring Cloud Stream*
+- **SpringOne Platform 2018 (Washington, DC)**: *Continuous Data Governance with Spring Cloud Data Flow*
+- **Apache Geode Summit 2016 (Palo Alto, CA)**: *Predicting and Preventing Vehicle Failures Using Streaming Telematics Analysis*
+- **IBM Datapalooza 2015 (San Francisco, CA)**: *Real Time Vehicle Telematics*
+- **Pivotal Labs Meetup 2015 (San Francisco, CA)**: *Predicting & Preventing Vehicle Failures Using Streaming Telematics Analysis*
+
+## Skills & Technologies
+- **Programming Languages**: Python, Java favorites. But code generation models make this not important anymore, heh.
+- **Data & AI Platforms**: Nvidia TensorRT, Nvidia TensorRT-LLM, Nvidia NeMo, Nvidia TAO, Nvidia ACE, Apache Spark, Hadoop.. and too many more to list.
+- **AI Frameworks**: PyTorch, TensorFlow, Neural Networks.
+- **Cloud Platforms**: AWS (Certified Solutions Architect), Microsoft Azure.
+- **AI Expertise**: Machine Learning, Neural Networks, Real-Time AI at the Edge.
+- **Research Interests**:
+  - Computational number theory, continued fractions, spectral theory, fractal geometry
+  - Continued fraction neural networks for enhanced interpretability and explainability in AI
+  - GPU-accelerated attacks on open mathematical conjectures
+- **Others**: Distributed Systems, Data Pipelines, CI/CD.
+
+## Interests
+- **Learning Resources**: I recommend [deeplearning.ai](https://deeplearning.ai) for refreshing your AI knowledge and staying sharp.
+- **Hobbies**:
+  - Motorcycles & Metal: Recently participated in a music video for Slaughter to Prevail.
+  - Mathematics: A strong foundation in math is essential for AI — embrace it, don't fear it.
+  - Agentic AI software development and real-time AI applications.
+- Open source contributions and community engagement.
+- Causes: Education, Science, and Technology.
