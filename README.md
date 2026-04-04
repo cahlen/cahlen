@@ -1,54 +1,48 @@
 # Hi, I'm Cahlen Humphreys
 
 ## [bigcompute.science](https://bigcompute.science) — Big Math. Serious Hardware. Open Results.
-### [Website](https://bigcompute.science) · [GitHub](https://github.com/cahlen/bigcompute.science) · [Experiment Code](https://github.com/cahlen/idontknow) · [llms.txt](https://bigcompute.science/llms.txt)
+### [Website](https://bigcompute.science) · [GitHub](https://github.com/cahlen/bigcompute.science) · [Experiment Code](https://github.com/cahlen/idontknow) · [MCP Server](https://mcp.bigcompute.science/mcp) · [llms.txt](https://bigcompute.science/llms.txt)
 
 Attacking open mathematical conjectures with GPU compute and AI — publishing everything openly for humans and agents.
 
-**All work is human–AI collaborative** (Cahlen Humphreys + Claude). No mathematical results have been independently peer-reviewed. All claims are grounded in computational evidence and reproducible code. Everything is open for verification.
+**Human–AI collaborative research** (Cahlen Humphreys + Claude, o3-pro, GPT-5.2, Grok). Not peer-reviewed — AI-audited claim-by-claim by multiple models. All claims grounded in computational evidence and reproducible code. Everything open for verification.
 
 Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 5090** local:
 
 | Experiment | Result | Status |
 |-----------|--------|--------|
-| **Zaremba's Conjecture (1972)** | Computer-assisted proof framework (not yet peer-reviewed). D₀ ≈ 3.4×10¹⁰, 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
-| **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT via 4-SAT. Strongest computational evidence R(5,5) = 43. | Complete |
-| **Class Numbers** | 2.74B discriminants for d ∈ [10⁹, 10¹⁰]. Cohen-Lenstra convergence is non-monotone. | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
-| **Zaremba Density** | A={1,2,3} has exactly 27 exceptions to 10^{10}. Exception set closed. | [Finding](https://bigcompute.science/findings/zaremba-density-phase-transition/) |
-| **Hausdorff Spectrum** | First-ever complete dim_H for all 2²⁰ - 1 subsets of {1,...,20} | Complete |
-| **Lyapunov Spectrum** | Lyapunov exponents for all 1,048,575 subsets | Complete |
-| **Minkowski ?(x) Spectrum** | First numerical multifractal singularity spectrum f(α) | Complete |
-| **Flint Hills Series** | Partial sums to 10¹⁰, spike decomposition, growth rate analysis | Complete |
-| **LLM Theorem Proving** | 19/20 Lean 4 proofs via Goedel-Prover + Kimina-Prover race | Complete |
-| **Spectral Gaps** | Uniform gaps (min 0.237) across 1,214 square-free moduli to m=1999 | Complete |
-| **Transitivity** | Algebraic argument (Dickson's classification) for all primes, AI-assisted, not peer-reviewed | Complete |
-| **Cayley Diameters** | diam(p)/log(p) → 1.45 for 669 primes to p=1021 | Complete |
-| **Kronecker Coefficients** | GPU-accelerated to n=120 for geometric complexity theory | Planned |
+| **Zaremba Conjecture** | Proof framework (4 gaps remain). ρ_η ≤ 0.7606 (arb-certified, 77 digits). 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
+| **Zaremba Density** | 4 closed exception sets: {1,2,3}=27, {1,2,4}=64, {1,2,5}=374, {1,2,6}=1,834. A={1,2} logarithmic convergence. | [Finding](https://bigcompute.science/findings/zaremba-density-phase-transition/) |
+| **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT. Strongest computational evidence R(5,5) = 43. | Complete |
+| **Kronecker Coefficients** | S₃₀ (26.4B nonzero), S₄₀ (94.9% nonzero), S₄₅ computing now. | [Finding](https://bigcompute.science/findings/kronecker-s30-largest-computation/) |
+| **Class Numbers** | 30B discriminants. h=1 rate falls to 0 (genus theory). | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
+| **Hausdorff Spectrum** | First complete dim_H for all 2²⁰-1 subsets of {1,...,20} | Complete |
+| **Ramanujan Machine** | 586B candidates through degree 7 | In progress |
+| **Lyapunov / Minkowski / Flint Hills** | Complete spectra and partial sums | Complete |
 
 ### Key Numbers
 
 ```
 Zaremba brute-force:     210,000,000,000 denominators verified (zero failures)
-Zaremba framework:       D₀ ≈ 3.4×10¹⁰, arb/MPFR interval-certified (not peer-reviewed)
-Ramsey R(5,5):           656/656 K₄₂ colorings cannot extend to K₄₃ (4-SAT, 3 sec)
-Class numbers:           2,735,671,820 fundamental discriminants computed (30 min)
-Spectral gap minimum:    σ_m ≥ 0.237 across 1,214 moduli (property τ confirmed)
+Zaremba ρ_η:             ≤ 0.7606 (arb ball arithmetic, 77 digits, FLINT 256-bit)
+Zaremba exceptions:      4 closed sets: 27 → 64 → 374 → 1,834 (stable to 10¹¹)
+Ramsey R(5,5):           656/656 K₄₂ colorings UNSAT (4-SAT, 3 sec on 8×B200)
+Kronecker S₃₀:          26.4 billion nonzero triples (7.4 min on B200)
+Kronecker S₄₀:          94.9% nonzero (sampled), max g ≥ 1.3×10¹⁸
+Class numbers:           30 billion fundamental discriminants
+Spectral gaps:           σ_m ≥ 0.237 (N=15, ~2-3 decimal accuracy, not proof of τ)
 Hausdorff dimension:     δ = 0.836829443681208 (15 digits)
 Hausdorff spectrum:      1,048,575 subsets computed in 72 min on RTX 5090
-Transitivity:            algebraic argument for all primes (Dickson, AI-assisted)
+Cayley diameters:        diam(p)/log(p) → 1.45 for 172 primes to p=1021
 ```
 
-Every experiment includes structured YAML frontmatter, raw data, and reproduction commands. The site serves [`/llms.txt`](https://bigcompute.science/llms.txt) for agent consumption.
+### 15 Published Findings · 41 Reviews · 4 AI Models · 3 Providers
 
-### 8 Published Findings
-1. [Cohen-Lenstra convergence is non-monotone](https://bigcompute.science/findings/class-number-convergence/) — h=1 rate decreases from 42% to 17% before asymptotic 75%
-2. [Zaremba computer-assisted proof](https://bigcompute.science/findings/zaremba-conjecture-proved/) — MOW + arb interval arithmetic, 15-page paper
-3. [Congruence spectral gaps are uniform](https://bigcompute.science/findings/zaremba-spectral-gaps-uniform/) — property (τ) confirmed at unprecedented scale
-4. [Transitivity for all primes](https://bigcompute.science/findings/zaremba-transitivity-all-primes/) — no local obstructions to Zaremba
-5. [Cayley graph diameters](https://bigcompute.science/findings/zaremba-cayley-diameters/) — bounds max CF length mod p
-6. [Witness golden ratio connection](https://bigcompute.science/findings/zaremba-witness-golden-ratio/) — a/d concentrates at 1/(5+φ)
-7. [Digit 1 dominance in Hausdorff spectrum](https://bigcompute.science/findings/hausdorff-digit-one-dominance/) — 5 digits with 1 beat 19 without
-8. [Representation growth R(d) ~ d^0.674](https://bigcompute.science/findings/zaremba-representation-growth/) — transfer operator prediction confirmed
+Every finding is AI-audited claim-by-claim against published literature. 92 issues identified, 90 resolved with commit-linked fixes. [Full audit dashboard →](https://bigcompute.science/verification/)
+
+### Contribute
+
+Open a [Colab notebook](https://colab.research.google.com/github/cahlen/bigcompute.science/blob/main/public/notebooks/bigcompute_research_agent.ipynb) — free T4 GPU, auto-compile CUDA kernels, run experiments on open conjectures. Or run the [research agent](https://github.com/cahlen/idontknow/blob/main/scripts/research_agent.py) with any one API key (Gemini free, OpenAI, or Anthropic).
 
 ---
 
