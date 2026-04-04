@@ -3,20 +3,20 @@
 ## [bigcompute.science](https://bigcompute.science) — Big Math. Serious Hardware. Open Results.
 ### [Website](https://bigcompute.science) · [GitHub](https://github.com/cahlen/bigcompute.science) · [Experiment Code](https://github.com/cahlen/idontknow) · [MCP Server](https://mcp.bigcompute.science/mcp) · [llms.txt](https://bigcompute.science/llms.txt)
 
-Attacking open mathematical conjectures with GPU compute and AI — publishing everything openly for humans and agents.
+I work on open mathematical conjectures using GPU compute and AI, publishing all results openly.
 
-**Human–AI collaborative research** (Cahlen Humphreys + Claude, o3-pro, GPT-5.2, Grok). Not peer-reviewed — AI-audited claim-by-claim by multiple models. All claims grounded in computational evidence and reproducible code. Everything open for verification.
+**Human–AI collaborative** (Cahlen Humphreys + Claude, o3-pro, GPT-5.2, Grok). Not peer-reviewed — I check claims using multiple AI models. All code and data openly available for anyone to check.
 
-Running on an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 5090** local:
+I use an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 5090** locally:
 
 | Experiment | Result | Status |
 |-----------|--------|--------|
-| **Zaremba Conjecture** | Proof framework (4 gaps remain). ρ_η ≤ 0.7606 (arb-certified, 77 digits). 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
+| **Zaremba Conjecture** | Computational framework (4 gaps remain). ρ_η ≤ 0.7606 (arb-certified, 77 digits). 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
 | **Zaremba Density** | 4 closed exception sets: {1,2,3}=27, {1,2,4}=64, {1,2,5}=374, {1,2,6}=1,834. A={1,2} logarithmic convergence. | [Finding](https://bigcompute.science/findings/zaremba-density-phase-transition/) |
-| **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT. Strongest computational evidence R(5,5) = 43. | Complete |
+| **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT. Computational evidence supporting R(5,5) = 43. | Complete |
 | **Kronecker Coefficients** | S₃₀ (26.4B nonzero), S₄₀ (94.9% nonzero), S₄₅ computing now. | [Finding](https://bigcompute.science/findings/kronecker-s30-largest-computation/) |
 | **Class Numbers** | 30B discriminants. h=1 rate falls to 0 (genus theory). | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
-| **Hausdorff Spectrum** | First complete dim_H for all 2²⁰-1 subsets of {1,...,20} | Complete |
+| **Hausdorff Spectrum** | Computed dim_H for all 2²⁰-1 subsets of {1,...,20} | Complete |
 | **Ramanujan Machine** | 586B candidates through degree 7 | In progress |
 | **Lyapunov / Minkowski / Flint Hills** | Complete spectra and partial sums | Complete |
 
@@ -38,7 +38,7 @@ Cayley diameters:        diam(p)/log(p) → 1.45 for 172 primes to p=1021
 
 ### 15 Published Findings · 43 Reviews · 5 AI Models · 4 Providers
 
-Every finding is AI-audited claim-by-claim against published literature. 121 issues identified, 118 resolved with commit-linked fixes. [Full audit dashboard →](https://bigcompute.science/verification/)
+For every finding, I check claims against published literature using AI models. 121 issues identified, 118 resolved with commit-linked fixes. [Full audit dashboard →](https://bigcompute.science/verification/)
 
 ### Contribute
 
@@ -48,9 +48,9 @@ Open a [Colab notebook](https://colab.research.google.com/github/cahlen/bigcompu
 
 ## [Guerrilla Mathematics™](https://guerrillamathematics.com) — Merch That Funds Open Math Research
 
-Every purchase at [guerrillamathematics.com](https://guerrillamathematics.com) directly funds GPU time on the 8×B200 cluster for attacking unsolved problems — Zaremba's Conjecture, Ramsey R(5,5), Kronecker coefficients, and more. All results published openly at [bigcompute.science](https://bigcompute.science).
+Purchases from [guerrillamathematics.com](https://guerrillamathematics.com) help cover GPU costs for working on problems like Zaremba's Conjecture, Ramsey R(5,5), and Kronecker coefficients. All results shared openly at [bigcompute.science](https://bigcompute.science).
 
-The concept: mathematics as culture. Verification badges as stickers. Hausdorff spectra as prints. Density landscapes on hoodies. Peer review as a lifestyle. Computational data as art.
+Math should be visible and celebrated — so I turned verification badges into stickers, Hausdorff spectra into prints, and density landscapes into hoodies.
 
 **T-shirts · Hoodies · Stickers · Prints** — coming soon.
 
