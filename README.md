@@ -46,6 +46,16 @@ Open a [Colab notebook](https://colab.research.google.com/github/cahlen/bigcompu
 
 ---
 
+## [Guerrilla Mathematics™](https://guerrillamathematics.com) — Merch That Funds Open Math Research
+
+Every purchase at [guerrillamathematics.com](https://guerrillamathematics.com) directly funds GPU time on the 8×B200 cluster for attacking unsolved problems — Zaremba's Conjecture, Ramsey R(5,5), Kronecker coefficients, and more. All results published openly at [bigcompute.science](https://bigcompute.science).
+
+The concept: mathematics as culture. Verification badges as stickers. Hausdorff spectra as prints. Density landscapes on hoodies. Peer review as a lifestyle. Computational data as art.
+
+**T-shirts · Hoodies · Stickers · Prints** — coming soon.
+
+---
+
 ## CoFrGeNet-F — Continued Fraction Language Model
 ### [Repo](https://github.com/cahlen/cofrgenet-f) · [Model Weights](https://huggingface.co/cahlen/cofrgenet-f)
 
