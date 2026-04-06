@@ -36,7 +36,7 @@ Hausdorff spectrum:      1,048,575 subsets computed in 72 min on RTX 5090
 Cayley diameters:        diam(p)/log(p) → 1.45 for 172 primes to p=1021
 ```
 
-### 15 Published Findings · 43 Reviews · 5 AI Models · 4 Providers
+### 17 Published Findings · 44 Reviews · 6 AI Models · 4 Providers
 
 For every finding, I check claims against published literature using AI models. 121 issues identified, 118 resolved with commit-linked fixes. [Full audit dashboard →](https://bigcompute.science/verification/)
 
