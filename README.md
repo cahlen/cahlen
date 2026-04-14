@@ -14,10 +14,12 @@ I use an **8× NVIDIA B200 DGX** (1.43 TB VRAM, NVLink 5 full mesh) + **RTX 5090
 | **Zaremba Conjecture** | Computational framework (4 gaps remain). ρ_η ≤ 0.7606 (arb-certified, 77 digits). 210B verified. | [Paper](https://github.com/cahlen/idontknow/blob/main/paper/zaremba-proof.pdf) |
 | **Zaremba Density** | 4 closed exception sets: {1,2,3}=27, {1,2,4}=64, {1,2,5}=374, {1,2,6}=1,834. A={1,2} logarithmic convergence. | [Finding](https://bigcompute.science/findings/zaremba-density-phase-transition/) |
 | **Ramsey R(5,5)** | 656/656 K₄₂ colorings UNSAT. Computational evidence supporting R(5,5) = 43. | Complete |
-| **Kronecker Coefficients** | S₃₀ (26.4B nonzero), S₄₀ (94.9% nonzero), S₄₅ computing now. | [Finding](https://bigcompute.science/findings/kronecker-s30-largest-computation/) |
-| **Class Numbers** | 30B discriminants. h=1 rate falls to 0 (genus theory). | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
+| **Kronecker Coefficients** | S₃₀ (26.4B nonzero), S₄₀ (94.9% nonzero). S₄₅ infeasible (63 TB). | [Finding](https://bigcompute.science/findings/kronecker-s30-largest-computation/) |
+| **Class Numbers** | 30B+ discriminants (10^11 complete, 10^12 partial). Cohen-Lenstra confirmed. | [Finding](https://bigcompute.science/findings/class-number-convergence/) |
 | **Hausdorff Spectrum** | Computed dim_H for all 2²⁰-1 subsets of {1,...,20} | Complete |
-| **Ramanujan Machine** | 586B candidates through degree 7 | In progress |
+| **Ramanujan Machine** | v1 exhausted (586B candidates, 0 new transcendentals). v2 kernel validated. | Complete |
+| **Erdos-Straus** | f(p) computed for all primes to 10⁸. Conjecture holds. 10⁹ in progress. | Complete |
+| **Prime Convergents** | 10M CFs, uint128 depth ~75. Erdos-Mahler bound holds 100%. | Complete |
 | **Lyapunov / Minkowski / Flint Hills** | Complete spectra and partial sums | Complete |
 
 ### Key Numbers
