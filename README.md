@@ -40,7 +40,7 @@ Cayley diameters:        diam(p)/log(p) → 1.45 for 172 primes to p=1021
 
 ### 18 Published Findings · 53 Reviews · 7 AI Models · 3 Providers
 
-For every finding, I check claims against published literature using AI models. 210 issues identified, 207 resolved with commit-linked fixes. [Full audit dashboard →](https://bigcompute.science/verification/)
+For every finding, I check claims against published literature using AI models. 217 issues identified, 200 resolved with commit-linked fixes. [Full audit dashboard →](https://bigcompute.science/verification/)
 
 ### Contribute
 
