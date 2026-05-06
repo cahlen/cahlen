@@ -73,6 +73,24 @@ Each layer computes an explicit rational function with learnable coefficients �
 
 ---
 
+## corpus-mill — Multimodal Video Annotation Pipeline (Local GPU)
+### [Repo](https://github.com/cahlen/corpus-mill)
+
+Open-source pipeline that turns any long-form video with people on camera into a time-aligned event corpus across audio, vision, OCR, faces, brand observations, music, and clip-worthy moments. Runs entirely on local GPU — every model (Whisper, pyannote, Qwen2.5-VL, dlib + YuNet, local Ollama) stays on the silicon you own. No content ever leaves your hardware.
+
+Built as a synthetic-data factory for multimodal model training; also useful standalone for clip discovery, brand intelligence, audience cohorting, and forensic content fingerprinting.
+
+| Stage | Model | Where it runs |
+|-------|-------|---------------|
+| ASR | Whisper-large-v3 (faster-whisper) | local GPU |
+| Diarization | pyannote/speaker-diarization-3.1 | local GPU |
+| Vision + OCR + shoppable | Qwen2.5-VL-7B | local GPU |
+| Faces | YuNet + dlib face_recognition | local CPU |
+| Hot/cold-pass intel | qwen2.5:7b / qwen3:14b via local Ollama | local GPU |
+| Audio + visual fingerprinting | chromaprint + PDQ | local CPU |
+
+---
+
 ![Battle Station](https://pbs.twimg.com/media/GohMpv3XcAAOBLI?format=jpg&name=medium)
 
 Fan of AI, math, computers, motorcycles, and metal.
