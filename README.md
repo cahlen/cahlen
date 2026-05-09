@@ -91,7 +91,7 @@ Built as a synthetic-data factory for multimodal model training; also useful sta
 
 ---
 
-![Battle Station](https://pbs.twimg.com/media/GohMpv3XcAAOBLI?format=jpg&name=medium)
+![Battle Station](assets/battlestation.JPG)
 
 Fan of AI, math, computers, motorcycles, and metal.
 
